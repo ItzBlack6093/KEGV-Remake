@@ -1,0 +1,181 @@
+@font-face {
+    font-family: CLK;
+    src: url(font/CLK.ttf);
+}
+@font-face {
+    font-family: FSB;
+    src: url(font/FSB.ttf);
+}
+@font-face {
+    font-family: SGN;
+    src: url(font/SGN.otf);
+}
+
+body {
+    font-family: CLK;
+}
+
+.mino {
+    color: #000;
+    font-weight: normal;
+    background-size: 3.2rem 1.6rem;
+    background-repeat: no-repeat;
+    background-position: 0;
+    box-sizing: border-box;
+    padding: 6px 0px 5px 50px;
+    width: 100%;
+}
+
+.mino.i,.imino {background-image: url("./img/i.png");}
+.mino.o,.omino {background-image: url("./img/o.png");}
+.mino.j,.jmino {background-image: url("./img/j.png");}
+.mino.l,.lmino {background-image: url("./img/l.png");}
+.mino.s,.smino {background-image: url("./img/s.png");}
+.mino.z,.zmino {background-image: url("./img/z.png");}
+.mino.t,.tmino {background-image: url("./img/t.png");}
+.reversed .mino.j,.reversed .jmino {background-image: url("./img/l.png");}
+.reversed .mino.l,.reversed .lmino {background-image: url("./img/j.png");}
+.reversed .mino.s,.reversed .smino {background-image: url("./img/z.png");}
+.reversed .mino.z,.reversed .zmino {background-image: url("./img/s.png");}
+
+.fl-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin: 0 2vw;
+}
+
+h2 > div {
+    font-weight: bold;
+    padding: 10px 0px 10px 15px;
+    border: solid 1px #db39af;
+    border-left: solid 10px #db39af;
+    width: calc(100% - 30px);
+    color: #000;
+    margin: 30px 0 10px;
+}
+
+h3, .h3 {
+    color: var(--black);
+    font-weight: normal;
+    background: #db39af66;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-image: url("img/flowerb.png");
+    background-position: 5px;
+    box-sizing: border-box;
+    padding: 6px 0px 5px 36px;
+    width: 100%;
+    margin: 20px 0px 5px;
+}
+
+h4, .h4 {
+    color: #000;
+    font-weight: normal;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-image: url("img/flowerb.png");
+    background-position: 5px;
+    box-sizing: border-box;
+    padding: 4px 0px 4px 28px;
+    margin: 20px auto 10px;
+    border-bottom: solid 1px #aaa;
+}
+
+.tetCanvas {
+    display: block;
+    margin: 5px 10px;
+}
+
+.splitter {
+    width: 1em
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #aaa;
+    letter-spacing: 1px;
+}
+
+th,
+td {
+    border: 1px solid #aaa;
+    padding: 8px 10px;
+}
+
+.flipHorizontal {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #181880;
+    opacity: 0.6;
+    border-radius: 50%;
+}
+
+.flipHorizontal div {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(/img/mirr.png) no-repeat;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.reversed .tetCanvas {
+  transform: scale(-1, 1);
+}
+.reversed .tetCanvas.mirror {
+  transform: scale(1, 1); /* mirror付きなら反転しない */
+}
+
+.reversed .flipHorizontal {
+    background-color: #7d1880 !important;
+}
+
+#page_top {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    background: #181880;
+    opacity: 0.6;
+    border-radius: 50%;
+}
+
+#page_top.hidden {
+    display: none;
+}
+
+#page_top a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+
+#page_top a::before {
+    font-weight: 900;
+    content: '↑';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -15px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}

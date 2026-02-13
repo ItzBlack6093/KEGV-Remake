@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konoha Easy Guide</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/flower.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="flipHorizontal"><div></div></div>
+    <div id="page_top"><a href="#"></a></div>
+
+    <div class="content">
+      <h1>Hướng dẫn Konoha Easy</h1>
+      <p>
+        Đây là một cái guide cơ bản để clear Konoha Easy.
+      </p>
+      <p>
+        Nếu bạn muốn đạt 110AC thì nên đọc vì các pattern này xuất hiện gần như
+        tuyệt đối trong 1 run, còn nếu chỉ muốn săn girl mở skin thì... cứ đọc
+        đi lol
+      </p>
+
+      <h2 id="mechanics"><div>Sơ lược về Konoha Easy</div></h2>
+      <p>
+        Các khối sẽ được nhân đôi kích thước, mục tiêu là đạt được nhiều All Clear nhất có thể.
+      </p>
+      <p>
+        Sẽ có thời gian giới hạn, có thể kéo dài bằng cách đạt All Clear
+      </p>
+      <table>
+        <tr>
+          <th>Số hàng clear</th>
+          <th>Thưởng All Clear</th>
+          <th>Level tăng thêm</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>+5s</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>+8s</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>+11s</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>+15s</td>
+          <td>12</td>
+        </tr>
+      </table>
+
+      <h2 id="patterns"><div>Các patterns</div></h2>
+
+      <h3 id="patt_nodupe">Không trùng lặp ( %I%L%J%O%T )</h3>
+      <p>Với trình xáo gạch IRM, tỉ lệ các khối không trùng lặp là rất lớn, nên ưu tiên học các pattern này.</p>
+      <div class="fl-all">
+        <div class="ttt">iooll iootl ijttt ijjjl</div>
+        <div class="ttt">jjjll iiiil oojtl oottt</div>
+        <div class="ttt">iooll iootl ijttt ijjjl</div>
+        <div class="ttt">iooll iootl ijttt ijjjl</div>
+      </div>
+
+      <h3 id="patt_3x4">3x4 Box</h3>
+      <p>Dùng pattern này khi có nhiều L/J</p>
+      <h4>Build</h4>
+      <p>Nếu bạn biết 3-6 stacking, thì bạn biết build.</p>
+      <div class="fl-all">
+        <div class="ttt">lll loo joo jjj</div>
+        <div class="splitter"></div>
+        <div class="ttt">Loo Loo LLl lll</div>
+        <div class="ttt">LLL Lll ool ool</div>
+        <div class="splitter"></div>
+        <div class="ttt">Tll TTl Ttl ttt</div>
+        <div class="ttt">TTT lTt ltt llt</div>
+      </div>
+      <h4>Solve</h4>
+      <p>Có thể solve bằng các 2x4 Box ở dưới.</p>
+      <p>Có thể dựng đứng L/J/T để giải khi khối thứ 5 là J/L</p>
+      <div class="fl-all">
+        <div class="ttt">ll jj lj lj</div>
+        <div class="ttt">ll tl tt tl</div>
+        <div class="ttt">ll Ll Ll LL</div>
+      </div>
+
+      <h3 id="patt_2x4">2x4 Box</h3>
+      <p>Dùng pattern này khi có 2 khối trùng nhau</p>
+      <h4>Build</h4>
+      <div class="fl-all">
+        <div class="ttt">iI iI iI iI</div>
+        <div class="ttt">OO OO oo oo</div>
+        <div class="ttt">LL lL lL ll</div>
+        <div class="ttt">JJ Jj Jj jj</div>
+      </div>
+      <h4>Solve</h4>
+      <p>Có thể solve bằng các 3x4 Box ở trên.</p>
+      <div class="fl-all">
+        <div class="ttt">jjl lll joo joo</div>
+      </div>
+      <p>TLJ có thể giải bằng cách quay ngược L và J (TGM Rule thì khỏi lol)</p>
+      <div class="fl-all">
+        <div class="ttt">lll ttt ltj jjj</div>
+        <div class="ttt">jjj lll ltj ttt</div>
+      </div>
+      <p>LLT có thể giải nếu T không đến đầu tiên.</p>
+      <div class="fl-all">
+        <div class="ttt">LLL ttt Ltl lll</div>
+        <div class="ttt">ttt lLL ltL llL</div>
+      </div>
+      <p>Có thể solve bằng các 3x4 Box ở trên.</p>
+      <div class="fl-all">
+        <div class="ttt">jjl lll joo joo</div>
+      </div>
+      <p>LLT có thể giải theo mọi thứ tự</p>
+      <div class="fl-all">
+        <div class="ttt">TTT lTt ltt llt</div>
+        <div class="ttt">TTT tll ttl tTl</div>
+        <div class="ttt">Tll TTl Ttl ttt</div>
+      </div>
+
+
+      <h3 id="patt_tt">Double %T</h3>
+      <h4>Build</h4>
+      <div class="fl-all">
+        <div class="ttt">T---- TT--- Tt--- ttt--</div>
+      </div>
+      <h4>Solve</h4>
+      <div class="fl-all">
+        <div class="ttt">cttti cclli cctli cccli</div>
+        <div class="ttt">ciiii cclll ccloo cccoo</div>
+        <div class="ttt">ciiii ccjoo ccjjj cccoo</div>
+      </div>
+
+      <h3 id="patt_iot_jjt">%I%O%T / %J%J%T</h3>
+      <h4>Build</h4>
+      <div class="fl-all">
+        <div class="ttt">----i t---i ttooi t-ooi</div>
+        <div class="ttt">----J t---J ttjJJ t-jjj</div>
+        <div class="ttt">----- ----c c---c c-ccc</div>
+      </div>
+      <h4>Solve</h4>
+    <div class="fl-all">
+        <div class="ttt">tttlc clllc ctccc</div>
+        <div class="ttt">llooc clooc clccc</div>
+        <div class="ttt">iiiic clllc clccc</div>
+      </div>
+
+      <h3 id="patt_extra">Extra</h3>
+      <h4>%T%L</h4>
+      <div class="fl-all">
+        <div class="ttt">----- ----t llltt l---t</div>
+        <div class="ttt">----- ----- ----c c---c</div>
+      </div>
+      <div class="fl-all">
+        <div class="ttt">oojJJ oojJc cjjJc</div>
+        <div class="ttt">ooLLL ooLlc clllc</div>
+        <div class="ttt">llljj loojc coojc</div>
+      </div>
+
+      <h3 id="patt_unsolvable">Nếu không giải được...</h3>
+      <p>Đặt khối ở trên stack cao thêm 4 ô nữa, sau đó downstack.</p>
+      <div class="fl-all">
+        <div class="ttt">iU--- iU--- iU--- iU--- cc--- ccc-c</div>
+        <div class="ttt">----- ---LL ---lL ---lL ---ll ----c</div>
+      </div>
+
+      <h2><div>Chiến thuật</div></h2>
+      <p>Nhắm mục tiêu khoảng 70AC trước level 1000</p>
+      <p>Còn assist: Tập trung vào Speed, làm theo assist (tự giải thì càng tốt vì nó nhanh hơn)</p>
+      <p>Không còn assist: Tập trung vào All Clear, suy nghĩ để giải (suy nghĩ cũng tầm 15s-20s thôi, không thì phá).</p>
+      <p>Level 1000+: Tập trung vào Speed, lúc này suy nghĩ sẽ chỉ mất thời gian.</p>
+
+      <h2><div>Credits</div></h2>
+      <p>TGM4 development team: Tạo ra TGM4</p>
+      <p>dottiz: <a href="https://dottizmemo.fc2.net/blog-entry-125.html">Guide gốc (tiếng Nhật)</a></p>
+    </div>
+  </body>
+</html>
